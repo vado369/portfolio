@@ -30,9 +30,9 @@ export function ProjectModal({
   return (
     <Modal open={open} onOpenChange={onOpenChange} closeLabel={t.projects.close} className="max-w-3xl">
       <ProjectCover project={project} className="h-40 w-full sm:h-48" />
-      <div className="p-6 sm:p-8">
+      <div className="min-w-0 p-5 sm:p-8">
         <div className="flex flex-wrap items-center gap-3">
-          <ModalTitle className="text-2xl font-semibold tracking-tight">{project.name}</ModalTitle>
+          <ModalTitle className="min-w-0 break-words text-2xl font-semibold tracking-tight">{project.name}</ModalTitle>
           <StatusPill status={project.status} />
         </div>
         <ModalDescription className="mt-2 text-pretty leading-relaxed text-muted-foreground">
@@ -48,7 +48,7 @@ export function ProjectModal({
                   {b.label}
                 </span>
               </div>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{b.text}</p>
+              <p className="mt-2 break-words text-sm leading-relaxed text-muted-foreground">{b.text}</p>
             </div>
           ))}
         </div>

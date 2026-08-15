@@ -20,7 +20,7 @@ export function Modal({ open, onOpenChange, children, className, closeLabel = "C
         <Dialog.Backdrop className="fixed inset-0 z-50 bg-background/70 backdrop-blur-sm transition-all duration-300 data-[ending-style]:opacity-0 data-[starting-style]:opacity-0" />
         <Dialog.Popup
           className={cn(
-            "fixed left-1/2 top-1/2 z-50 flex max-h-[90dvh] w-[calc(100vw-2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-2xl shadow-black/20 outline-none transition-all duration-300 data-[ending-style]:scale-95 data-[ending-style]:opacity-0 data-[starting-style]:scale-95 data-[starting-style]:opacity-0",
+            "fixed left-1/2 top-1/2 z-50 flex max-h-[90dvh] w-[calc(100%_-_2rem)] max-w-2xl -translate-x-1/2 -translate-y-1/2 flex-col overflow-x-hidden overflow-y-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-2xl shadow-black/20 outline-none transition-all duration-300 data-[ending-style]:scale-95 data-[ending-style]:opacity-0 data-[starting-style]:scale-95 data-[starting-style]:opacity-0",
             className,
           )}
         >
@@ -30,7 +30,7 @@ export function Modal({ open, onOpenChange, children, className, closeLabel = "C
           >
             <X className="size-4" />
           </Dialog.Close>
-          <div className="overflow-y-auto overscroll-contain">{children}</div>
+          <div className="min-w-0 overflow-x-hidden overflow-y-auto overscroll-contain">{children}</div>
         </Dialog.Popup>
       </Dialog.Portal>
     </Dialog.Root>

@@ -86,7 +86,7 @@ export function About() {
               <span className="font-mono text-xs tracking-wider text-muted-foreground uppercase">
                 {t.about.philosophy}
               </span>
-              <div className="mt-4 flex items-center gap-2">
+              <div className="mt-4 flex flex-wrap items-center gap-2">
                 {philosophy.map((p, i) => (
                   <div key={p.label} className="flex items-center gap-2">
                     <span className="inline-flex items-center gap-1.5 rounded-lg bg-secondary px-2.5 py-1.5 font-mono text-sm font-medium text-secondary-foreground">

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { useLanguage } from "@/components/language-provider"
 import { LangToggle, ThemeToggle } from "@/components/site-controls"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const SECTIONS = ["home", "about", "projects", "services", "contact"] as const
 
@@ -54,10 +55,23 @@ export function Navbar() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <a href="#home" className="group flex items-center gap-2.5" aria-label="Lénaïc Hounkpatin — Accueil">
           <span className="grid size-8 place-items-center rounded-lg bg-primary font-mono text-sm font-bold text-primary-foreground">
-            L
+            <Image
+              src="/icon.svg"
+              alt="Lénaïc Oswald Hounkpatin"
+              width={32}
+              height={32}
+              className="dark:hidden"
+            />
+            <Image
+              src="/icon-dark-32x32.png"
+              alt="Lénaïc Oswald Hounkpatin"
+              width={32}
+              height={32}
+              className="hidden dark:block"
+            />
           </span>
           <span className="font-mono text-sm font-medium tracking-tight text-foreground">
-            hounkpatin<span className="text-primary">.dev</span>
+            lenaic_oswald<span className="text-primary">.dev</span>
           </span>
         </a>
 

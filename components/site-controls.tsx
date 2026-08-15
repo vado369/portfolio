@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { Moon, Sun } from "lucide-react"
-import { useTheme } from "next-themes"
-import { useEffect, useState } from "react"
-import { useLanguage } from "@/components/language-provider"
-import { cn } from "@/lib/utils"
+import { Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+import { useLanguage } from "@/components/language-provider";
+import { cn } from "@/lib/utils";
 
 export function LangToggle({ className }: { className?: string }) {
-  const { lang, setLang } = useLanguage()
+  const { lang, setLang } = useLanguage();
   return (
     <div
       className={cn(
@@ -34,16 +34,22 @@ export function LangToggle({ className }: { className?: string }) {
         </button>
       ))}
     </div>
-  )
+  );
 }
 
 export function ThemeToggle({ className }: { className?: string }) {
-  const { resolvedTheme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
+  const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
-  const isDark = resolvedTheme === "dark"
-
+  const isDark = resolvedTheme === "dark";
+  if (!mounted) {
+    return (
+      <button type="button" aria-label="Changer de thème" className="invisible">
+        {/* same icon/content */}
+      </button>
+    );
+  }
   return (
     <button
       type="button"
@@ -64,5 +70,5 @@ export function ThemeToggle({ className }: { className?: string }) {
         <span className="size-4" />
       )}
     </button>
-  )
+  );
 }

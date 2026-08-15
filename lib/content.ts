@@ -40,10 +40,10 @@ export type Service = {
 export const CONTACT = {
   phone: "+229 0167613132",
   email: "oswald.len@proton.me",
-  x: "#",
-  linkedin: "#",
-  github: "#",
-  whatsapp: "#",
+  x: "https://x.com/lenaic94",
+  linkedin: "https://www.linkedin.com/in/oswald-lénaïc-b-hounkpatin-a0a36921a",
+  github: "https://github.com/vado369",
+  whatsapp: "https://wa.me/22967613132?text=Hello%2C%20from%20your%20portfolio",
 }
 
 export const skillGroups: {
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     id: "cicapay",
     name: "CicaPay",
     status: "live",
-    image: "/projects/cicapay.jpg",
+    image: "/projects/cicapay.png",
     link: "#",
     tech: ["PHP", "PostgreSQL", "Next.js", "RabbitMQ", "Redis", "Docker", "Solidity", "Ethers.js", "TypeScript", "Python"],
     short: {
@@ -174,7 +174,7 @@ export const projects: Project[] = [
     name: "mCica",
     status: "live",
     image: "/projects/mcica.jpg",
-    link: "#",
+    link: "https://play.google.com/store/apps/details?id=com.bryocorp.mcica",
     tech: ["React Native", "Expo", "Firebase", "JavaScript", "CicaPay API"],
     short: {
       fr: "Application mobile connectée à CicaPay pour vendre des produits digitaux et générer des liens de paiement.",
@@ -283,7 +283,7 @@ export const projects: Project[] = [
     name: "Achat Vente Bénin",
     status: "live",
     image: "/projects/achat-vente-benin.jpg",
-    link: "#",
+    link: "https://achatventebenin.com",
     tech: ["PHP", "MySQL", "HTML", "JavaScript", "CSS"],
     short: {
       fr: "Plateforme e-commerce béninoise avec annuaire de pharmacies et de contacts professionnels.",
@@ -311,7 +311,7 @@ export const projects: Project[] = [
     name: "El CASA APP",
     status: "live",
     image: "/projects/el-casa.jpg",
-    link: "#",
+    link: "https://t.me/elcasa1_bot",
     tech: ["PHP", "MySQL", "Telegram API", "JavaScript"],
     short: {
       fr: "Web app Telegram pour la communauté El CASA : mini-formations et jeu quotidien récompensé en USDT.",
@@ -339,7 +339,7 @@ export const projects: Project[] = [
     name: "Sanctuaire",
     status: "live",
     image: "/projects/sanctuaire.jpg",
-    link: "#",
+    link: "https://t.me/sanctuaire_bot",
     tech: ["PHP", "MySQL", "Telegram API", "JavaScript"],
     short: {
       fr: "Web app Telegram dédiée à la prière, avec des prières classées par problématique.",

@@ -57,14 +57,14 @@ export function Hero() {
             >
               {t.hero.viewProjects}
             </a>
-            <a
+            {/* <a
               href={CV_PATH}
               download
               className="inline-flex h-11 items-center gap-2 rounded-full px-4 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               <Download className="size-4" />
               {t.hero.downloadCv}
-            </a>
+            </a> */}
           </div>
         </div>
 

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     'Laravel',
     'Next.js',
     'Solidity',
-    'Lénaïc Hounkpatin',
+    'Lénaïc Oswald Hounkpatin',
   ],
   authors: [{ name: 'Lénaïc Oswald B. HOUNKPATIN' }],
   creator: 'Lénaïc Oswald B. HOUNKPATIN',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description:
       'Solutions technologiques concrètes en fintech, blockchain et systèmes logiciels.',
   },
-  generator: 'v0.app',
+  generator: 'lenaic-oswald-portfolio',
   icons: {
     icon: [
       { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },

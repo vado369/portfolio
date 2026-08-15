@@ -1,4 +1,4 @@
-export const SITE_NAME = "Lénaïc Hounkpatin"
+export const SITE_NAME = "Lénaïc Oswald Hounkpatin"
 export const SITE_ROLE = "Software Engineer"
 
 // Placeholder path — replace with the real CV file once provided.

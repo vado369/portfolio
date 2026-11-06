@@ -51,37 +51,50 @@ export const skillGroups: {
   label: Record<Lang, string>
   items: string[]
 }[] = [
-  {
-    id: "backend",
-    label: { fr: "Backend", en: "Backend" },
-    items: ["PHP", "Laravel", "Node.js", "Python"],
-  },
-  {
-    id: "frontend",
-    label: { fr: "Frontend", en: "Frontend" },
-    items: ["JavaScript", "TypeScript", "HTML", "CSS", "Next.js", "React Native"],
-  },
-  {
-    id: "databases",
-    label: { fr: "Bases de données", en: "Databases" },
-    items: ["MySQL", "PostgreSQL", "SQLite"],
-  },
-  {
-    id: "infra",
-    label: { fr: "Infrastructure", en: "Infrastructure" },
-    items: ["Docker", "Redis", "RabbitMQ", "BullMQ", "Linux", "Git", "GitHub"],
-  },
-  {
-    id: "blockchain",
-    label: { fr: "Blockchain", en: "Blockchain" },
-    items: ["Solidity", "Ethers.js", "Smart Contracts", "Crypto"],
-  },
-  {
-    id: "apis",
-    label: { fr: "APIs & Automatisation", en: "APIs & Automation" },
-    items: ["REST APIs", "Telegram API", "Meta API", "Google Apps Script", "Zapier"],
-  },
-]
+    {
+      id: "backend",
+      label: { fr: "Backend", en: "Backend" },
+      items: ["PHP", "Laravel", "Node.js", "Python", "Rust"],
+    },
+    {
+      id: "frontend",
+      label: { fr: "Frontend", en: "Frontend" },
+      items: ["JavaScript", "TypeScript", "HTML", "CSS", "Next.js", "React Native"],
+    },
+    {
+      id: "databases",
+      label: { fr: "Bases de données", en: "Databases" },
+      items: ["MySQL", "PostgreSQL", "SQLite"],
+    },
+    {
+      id: "infra",
+      label: { fr: "Infrastructure", en: "Infrastructure" },
+      items: ["Docker", "Redis", "RabbitMQ", "BullMQ", "Linux", "Git", "GitHub"],
+    },
+    {
+      id: "blockchain",
+      label: { fr: "Blockchain", en: "Blockchain" },
+      items: ["Solidity", "Ethers.js", "Smart Contracts", "Crypto"],
+    },
+    {
+      id: "apis",
+      label: { fr: "APIs & Automatisation", en: "APIs & Automation" },
+      items: ["REST APIs", "Telegram API", "Meta API", "Google Apps Script", "Zapier"],
+    },
+    {
+      id: "ai",
+      label: { fr: "IA & AI Engineering", en: "AI & AI Engineering" },
+      items: ["AI Engineering",
+        "AI Agents",
+        "LLM Integration",
+        "Prompt Engineering",
+        "RAG",
+        "AI Automation",
+        "Workflow Automation",
+        "AI-powered Applications",
+      ],
+    },
+  ]
 
 export const services: Service[] = [
   {
@@ -142,11 +155,40 @@ export const services: Service[] = [
 
 export const projects: Project[] = [
   {
+    id: "rpr-benin",
+    name: "RPR Bénin",
+    status: "live",
+    image: "/projects/rpr-benin.jpg",
+    link: "https://rpr-benin.bj",
+    tech: ["PHP", "MySQL", "Python", "Next.js", "AI"],
+    short: {
+      fr: "Plateforme de recherche dans le Répertoire des Prix de Référence du Bénin : recherche instantanée, suggestions, tableau personnalisable et export PDF, Word ou Excel.",
+      en: "Search platform for Benin's Reference Price Directory (RPR): instant search, suggestions, customizable table, and PDF, Word or Excel export.",
+    },
+    why: {
+      fr: "Le Répertoire des Prix de Référence est un document de plus de 800 pages, indispensable pour répondre aux marchés publics, mais fastidieux à parcourir.",
+      en: "The Reference Price Directory is an 800+ page document, essential for public procurement in Benin, but tedious to browse.",
+    },
+    problem: {
+      fr: "Entrepreneurs, PME, fournisseurs et PRMP perdent un temps précieux à chercher chaque article dans un PDF, surtout quand un appel d'offres en demande une vingtaine et que le délai de clôture approche.",
+      en: "Entrepreneurs, SMEs, suppliers and procurement officers lose precious time searching each item in a PDF, especially when a tender requires twenty items and the deadline is close.",
+    },
+    vision: {
+      fr: "Rendre la consultation d'un prix de référence aussi simple qu'une recherche en ligne, accessible à tous, à toute heure, sans compétences numériques avancées.",
+      en: "Make looking up a reference price as simple as an online search, accessible to everyone, at any time, without advanced digital skills.",
+    },
+    solution: {
+      fr: "Une plateforme indépendante, construite sur le document officiel, qui permet de rechercher plusieurs articles à la fois, de recevoir des suggestions proches, de personnaliser son tableau de résultats et de l'exporter en PDF, Word ou Excel.",
+      en: "An independent platform built on the official document that lets users search several items at once, get close-match suggestions, customize their results table and export it as PDF, Word or Excel.",
+    },
+
+  },
+  {
     id: "cicapay",
     name: "CicaPay",
     status: "live",
     image: "/projects/cicapay.png",
-    link: "#",
+    link: "https://cicapay.com",
     tech: ["PHP", "PostgreSQL", "Next.js", "RabbitMQ", "Redis", "Docker", "Solidity", "Ethers.js", "TypeScript", "Python"],
     short: {
       fr: "Agrégateur de paiement en ligne combinant Mobile Money et crypto, désormais fortement orienté paiements crypto.",
@@ -492,8 +534,8 @@ export const distinctions: Distinction[] = [
     id: "dsi-awards",
     year: "2025",
     title: {
-      fr: "2ᵉ Leader des Services Numériques — DSI Awards",
-      en: "2nd Digital Services Leader — DSI Awards",
+      fr: "2ᵉ Leader des Services Numériques - DSI Awards",
+      en: "2nd Digital Services Leader - DSI Awards",
     },
     detail: { fr: "Projet : CicaPay", en: "Project: CicaPay" },
   },
@@ -501,8 +543,8 @@ export const distinctions: Distinction[] = [
     id: "open-conscience",
     year: "2024",
     title: {
-      fr: "2ᵉ place — Open Conscience Awards",
-      en: "2nd place — Open Conscience Awards",
+      fr: "2ᵉ place - Open Conscience Awards",
+      en: "2nd place - Open Conscience Awards",
     },
     detail: {
       fr: "Catégorie : Best Digital Entrepreneur / Innovator",
@@ -513,8 +555,8 @@ export const distinctions: Distinction[] = [
     id: "mtn-labs",
     year: "2025",
     title: {
-      fr: "Présélection — MTN Innovation Labs",
-      en: "Shortlisted — MTN Innovation Labs",
+      fr: "Présélection - MTN Innovation Labs",
+      en: "Shortlisted - MTN Innovation Labs",
     },
     detail: { fr: "", en: "" },
   },
@@ -522,8 +564,8 @@ export const distinctions: Distinction[] = [
     id: "mali-digital",
     year: "2025",
     title: {
-      fr: "Présélection — Mali Digital Awards",
-      en: "Shortlisted — Mali Digital Awards",
+      fr: "Présélection - Mali Digital Awards",
+      en: "Shortlisted - Mali Digital Awards",
     },
     detail: { fr: "", en: "" },
   },
@@ -531,8 +573,8 @@ export const distinctions: Distinction[] = [
     id: "fenou",
     year: "2025",
     title: {
-      fr: "Présélection — FENOU Startup Challenge",
-      en: "Shortlisted — FENOU Startup Challenge",
+      fr: "Présélection - FENOU Startup Challenge",
+      en: "Shortlisted - FENOU Startup Challenge",
     },
     detail: { fr: "", en: "" },
   },

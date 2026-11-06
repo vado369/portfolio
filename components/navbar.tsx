@@ -53,7 +53,7 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <a href="#home" className="group flex items-center gap-2.5" aria-label="Lénaïc Hounkpatin — Accueil">
+        <a href="#home" className="group flex items-center gap-2.5" aria-label="Lénaïc Hounkpatin - Accueil">
           <span className="grid size-8 place-items-center rounded-lg bg-primary font-mono text-sm font-bold text-primary-foreground">
             <Image
               src="/icon.svg"

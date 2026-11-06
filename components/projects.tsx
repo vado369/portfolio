@@ -67,7 +67,7 @@ export function Projects() {
               <button
                 type="button"
                 onClick={() => openProject(project)}
-                aria-label={`${project.name} — ${t.projects.viewCase}`}
+                aria-label={`${project.name} - ${t.projects.viewCase}`}
                 className="group flex h-full min-w-0 w-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-left transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-black/5 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
               >
                 <div className="relative">

@@ -83,12 +83,19 @@ export function Hero() {
                 {"\n"}
                 <span className="text-primary">const</span> engineer = {"{"}
                 {"\n"}
-                {"  "}focus: [<span className="text-emerald-500">{'"fintech"'}</span>,{" "}
-                <span className="text-emerald-500">{'"blockchain"'}</span>],
+                {"  "}focus: [<span className="text-emerald-500">{'"fintech"'}</span>,
+                {" "}
+                <span className="text-emerald-500">{'"blockchain"'}</span>
+                {" "}
+                <span className="text-emerald-500">{'"ai"'}</span>
+                ],
                 {"\n"}
                 {"  "}stack: [<span className="text-emerald-500">{'"Laravel"'}</span>,{" "}
                 <span className="text-emerald-500">{'"Next.js"'}</span>,{" "}
-                <span className="text-emerald-500">{'"Solidity"'}</span>],
+                <span className="text-emerald-500">{'"Solidity"'}</span>
+                {" "}
+                <span className="text-emerald-500">{'"Rust"'}</span>
+                ],
                 {"\n"}
                 {"  "}mission: <span className="text-emerald-500">{'"solve real problems"'}</span>,
                 {"\n"}

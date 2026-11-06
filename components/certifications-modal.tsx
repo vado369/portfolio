@@ -31,7 +31,7 @@ export function CertificationsModal({ open, onOpenChange }: { open: boolean; onO
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`${cert.name} — ${cert.institution}`}
+                aria-label={`${cert.name} - ${cert.institution}`}
                 className="grid size-8 shrink-0 place-items-center rounded-full text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
               >
                 <ExternalLink className="size-4" />

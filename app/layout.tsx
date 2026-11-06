@@ -11,7 +11,7 @@ const siteUrl = 'https://lenaic-hounkpatin.vercel.app'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Lénaïc Oswald B. HOUNKPATIN — Software Engineer',
+  title: 'Lénaïc Oswald B. HOUNKPATIN - Software Engineer',
   description:
     'Software Engineer basé à Parakou, Bénin. Spécialisé en fintech, blockchain, Mobile Money, microservices et solutions logicielles sur mesure.',
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   creator: 'Lénaïc Oswald B. HOUNKPATIN',
   openGraph: {
     type: 'website',
-    title: 'Lénaïc Oswald B. HOUNKPATIN — Software Engineer',
+    title: 'Lénaïc Oswald B. HOUNKPATIN - Software Engineer',
     description:
       'Solutions technologiques concrètes en fintech, blockchain et systèmes logiciels.',
     url: siteUrl,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lénaïc Oswald B. HOUNKPATIN — Software Engineer',
+    title: 'Lénaïc Oswald B. HOUNKPATIN - Software Engineer',
     description:
       'Solutions technologiques concrètes en fintech, blockchain et systèmes logiciels.',
   },
